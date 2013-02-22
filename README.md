@@ -12,7 +12,6 @@ Easy parsing of emails in PHP
 
     $ep = new EmailParse();
     $email_map = $ep->parse($input);
-    $email_to_list = $email_map->getTo();
 
     print_r($email_map->getTo()); // getTo() returns a list since there can be more than one to address
     echo $email_map->getFrom();
